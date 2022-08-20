@@ -17,3 +17,6 @@ class testCalculator(unittest.TestCase):
 
     def test_StringIsMoreThanTwoNumber(self):
         self.assertEqual(self.obj.add("1,2,3"), 6)
+
+    def test_StringwithNewLine(self):
+        self.assertEqual(self.obj.add("1,2\n3"), 6)
