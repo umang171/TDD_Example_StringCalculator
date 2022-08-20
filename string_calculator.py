@@ -4,10 +4,6 @@ class stringCalculator:
             return 0
         elif(len(str.strip()) == 1):
             return int(str.strip())
-        elif(str.strip().count(",") == 1):
-            lst = str.split(",")
-            lst = list(map(lambda x: int(x), lst))
-            return sum(lst)
         elif(str.strip().count(",") >= 1):
             lst = str.split(",")
             lst = list(map(lambda x: int(x), lst))
