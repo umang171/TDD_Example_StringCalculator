@@ -1,3 +1,4 @@
 class stringCalculator:
     def add(self, str):
-        pass
+        if(len(str.strip()) == 0):
+            return 0
