@@ -11,3 +11,6 @@ class testCalculator(unittest.TestCase):
 
     def test_StringIsOneNumber(self):
         self.assertEqual(self.obj.add("4"), 4)
+
+    def test_StringIsTwoNumber(self):
+        self.assertEqual(self.obj.add("3,4"), 7)
