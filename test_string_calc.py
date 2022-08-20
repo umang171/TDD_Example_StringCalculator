@@ -8,3 +8,6 @@ class testCalculator(unittest.TestCase):
 
     def test_StringIsEmpty(self):
         self.assertEqual(self.obj.add(" "), 0)
+
+    def test_StringIsOneNumber(self):
+        self.assertEqual(self.obj.add("4"), 4)
