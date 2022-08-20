@@ -8,6 +8,7 @@ class stringCalculator:
             lst = str.split(",")
             lst = list(map(lambda x: int(x), lst))
             return sum(lst)
-
-
-print(stringCalculator().add("3,4"))
+        elif(str.strip().count(",") >= 1):
+            lst = str.split(",")
+            lst = list(map(lambda x: int(x), lst))
+            return sum(lst)

@@ -14,3 +14,6 @@ class testCalculator(unittest.TestCase):
 
     def test_StringIsTwoNumber(self):
         self.assertEqual(self.obj.add("3,4"), 7)
+
+    def test_StringIsMoreThanTwoNumber(self):
+        self.assertEqual(self.obj.add("1,2,3"), 6)
